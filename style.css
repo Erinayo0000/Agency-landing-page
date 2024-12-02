@@ -336,6 +336,9 @@ top: 4rem;
   #close-icon{
     display: none;
   }
+  .off-canvas{
+    display: none;
+  }
   @media (max-width:884px){
 
     .graphic-text{
@@ -477,6 +480,58 @@ top: 4rem;
 .close-icon{
   position: absolute;
   top:2rem;
+}
+.off-canvas{
+  display: block;
+}
+.off-canvas {
+  position: fixed;
+  top: 0;
+  right: 0; 
+  width: 250px; 
+  height: 100%; 
+  background-color:  hsl(0, 0%, 100%) ;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); 
+  overflow-x: hidden;
+  transition: transform 0.3s ease;
+  transform: translateX(100%); 
+  z-index: 1000;
+}
+
+.off-canvas.open {
+  transform: translateX(0); 
+}
+
+
+.off-canvas-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.off-canvas-content a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Fraunces', sans-serif;
+  color:  hsl(213, 9%, 39%);
+  margin-bottom: 10px;
+}
+
+.off-canvas-content .off-canvas-btn {
+  background-color: #ff7b54; /* Example button color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.off-canvas-content .closebtn {
+  font-size: 40px;
+  
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 

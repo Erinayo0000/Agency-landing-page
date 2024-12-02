@@ -17,13 +17,13 @@
     <nav class="navbar">
       <div class="tab-mob">
         <div class="logo"> sunnyside</div>
-        <div class="menu-icon" id="hamburger-icon" onclick="toggleMenu()">
+        <div class="menu-icon" id="hamburger-icon" onclick="openNav()">
           <i class="fa-solid fa-bars ham"></i>
         </div>
       </div>
 
-      <div class="nav-list" id="side-bar">
-        <div class="menu-icon close-icon" id="close-icon" onclick="toggleMenu()">
+      <div class="nav-list" id="mySidenav">
+        <div class="menu-icon close-icon" id="close-icon" onclick="openNav()">
           <i class="fa-solid fa-xmark"></i>
         </div>
 
@@ -34,11 +34,20 @@
            <button class="nav-btn">CONTACT</button>
         </ul>
        
+        <div id="offCanvasNav" class="off-canvas">
+          <div class="off-canvas-content">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <button class="off-canvas-btn">CONTACT</button>
+          </div>
+        </div>
+        
       </div>
       
      </nav>
      <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
-     <div id="content">  </div>
      <div class="h1-div">
       <h1 > WE ARE CREATIVES</h1>
       <img src="./images/Arrow long.svg" class="creatives" alt="">
